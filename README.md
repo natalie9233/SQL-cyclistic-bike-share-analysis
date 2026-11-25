@@ -173,4 +173,3 @@ Both analyses found that casual riders averaged longer trips and took a larger s
 
 If the first-month credit increases sign-ups, I would pair it with the accumulated ride-time plan. If the 2 p.m. invitation performs better than the comparison time slot, I would use that hour to promote the weekend riding challenge. At Streeter Dr & Grand Ave and Lake Shore Dr & Monroe St, I would use the better-performing pickup or return prompt to promote a member benefit. An e-bike benefit would also depend on bike availability at the station.
 
-I would use the measured sign-up rates to decide which Q1 tests to combine with the full-year membership strategy.
