@@ -65,37 +65,39 @@ Each percentage compares the same calendar month in 2020 and 2019.
 
 ### C. Stations and routes by quarter
 
-#### Casual riders' busiest stations
+The C queries rank stations and station pairs by **total trips within each year** and report the rider mix. The rider-type counts shown below are calculated from the total trips and reported shares, rounded to the nearest trip.
 
-**Streeter Dr & Grand Ave had the most casual departures in 2019 Q1, and Lake Shore Dr & Monroe St led in 2020 Q1.** Lake Shore Dr & Monroe St had the higher casual share of departures in both quarters.
+#### Casual departures at two stations
+
+Of the two stations shown below, **Streeter Dr & Grand Ave** had more casual departures in 2019 Q1, and **Lake Shore Dr & Monroe St** had more in 2020 Q1. Lake Shore Dr & Monroe St had the higher casual share of departures in both quarters.
 
 | Departure station | 2019 Q1 casual departures | 2020 Q1 casual departures |
 | --- | ---: | ---: |
 | Streeter Dr & Grand Ave | **1,219 trips** (58.92%) | 1,530 trips (62.09%) |
 | Lake Shore Dr & Monroe St | 1,142 trips (**74.06%**) | **1,590 trips** (**70.07%**) |
 
-Each percentage is the share of all departures from that station made by casual riders in that quarter. **Streeter Dr & Grand Ave** also recorded the most casual returns in both quarters.
+Each percentage is the share of all departures from that station made by casual riders in that quarter.
 
-#### Members' busiest stations
+#### Member share at the busiest stations overall
 
-In each quarter, the same station led in both member departures and member returns. The top station changed from **Clinton St & Washington Blvd** in 2019 Q1 to **Canal St & Adams St** in 2020 Q1.
+In each quarter, the same station led in both total departures and total returns. The top station changed from **Clinton St & Washington Blvd** in 2019 Q1 to **Canal St & Adams St** in 2020 Q1.
 
-| Quarter | Busiest member station | Member departures | Member returns |
+| Quarter | Busiest station overall | Member departures | Member returns |
 | --- | --- | ---: | ---: |
 | 2019 Q1 | Clinton St & Washington Blvd | 7,611 trips (98.86%) | 7,570 trips (98.32%) |
 | 2020 Q1 | Canal St & Adams St | 7,586 trips (97.09%) | 8,158 trips (98.02%) |
 
 Each percentage is the member share of all departures or all returns at that station in that quarter.
 
-#### Most common start-to-end station pairs
+#### Busiest station pairs and their rider mix
 
-Members accounted for most trips on the busiest station pair overall in both quarters. **The busiest casual pair started at Lake Shore Dr & Monroe St in both quarters.** It ended at Streeter Dr & Grand Ave in 2019 Q1 and back at Lake Shore Dr & Monroe St in 2020 Q1.
+Members accounted for most trips on the busiest station pair overall in both quarters. Casual riders accounted for more than 88% of trips on the two selected routes that started at **Lake Shore Dr & Monroe St**.
 
-| Ranked by | 2019 Q1 most common station pair | 2020 Q1 most common station pair |
+| Station pair | 2019 Q1 | 2020 Q1 |
 | --- | --- | --- |
-| All trips | Michigan Ave & Washington St → Clinton St & Washington Blvd (513 trips, **99.61% member**) | Ellis Ave & 60th St → University Ave & 57th St (479 trips, **91.02% member**) |
-| Member trips | Michigan Ave & Washington St → Clinton St & Washington Blvd (511 of 513 trips, **99.61% member**) | Canal St & Adams St → Michigan Ave & Washington St (451 of 455 trips, **99.12% member**) |
-| Casual trips | Lake Shore Dr & Monroe St → Streeter Dr & Grand Ave (319 of 334 trips, **95.51% casual**) | Lake Shore Dr & Monroe St → Lake Shore Dr & Monroe St (413 of 468 trips, **88.25% casual**) |
+| Busiest overall | Michigan Ave & Washington St → Clinton St & Washington Blvd (513 trips, **99.61% member**) | Ellis Ave & 60th St → University Ave & 57th St (479 trips, **91.02% member**) |
+| Member-heavy example | Michigan Ave & Washington St → Clinton St & Washington Blvd (511 of 513 trips, **99.61% member**) | Canal St & Adams St → Michigan Ave & Washington St (451 of 455 trips, **99.12% member**) |
+| Casual-heavy example | Lake Shore Dr & Monroe St → Streeter Dr & Grand Ave (319 of 334 trips, **95.51% casual**) | Lake Shore Dr & Monroe St → Lake Shore Dr & Monroe St (413 of 468 trips, **88.25% casual**) |
 
 Each percentage uses all trips on that station pair in the same quarter as its denominator.
 
@@ -103,15 +105,15 @@ The busiest Divvy station for both departures and returns was in Chicago’s Wes
 
 ### D. Busiest stations and routes across both first quarters
 
-I combined trips from 2019 Q1 and 2020 Q1 and ranked departures, returns, and station pairs by trip count within each rider type.
+I combined trips from 2019 Q1 and 2020 Q1. The SQL orders departure stations, return stations, and station pairs by **total trips across both rider types**. It also reports the member and casual shares of trips for each station activity or station pair.
 
-| Activity | Members | Casual riders |
-| --- | --- | --- |
-| Busiest departure station | Canal St & Adams St (13,799 of 14,155 departures, **97.48% member**) | Streeter Dr & Grand Ave (2,749 of 4,533 departures, **60.64% casual**) |
-| Busiest return station | Canal St & Adams St (14,807 of 15,067 returns, **98.27% member**) | Streeter Dr & Grand Ave (3,790 of 5,416 returns, **69.98% casual**) |
-| Most common station pair | Michigan Ave & Washington St → Clinton St & Washington Blvd (961 of 966 trips, **99.48% member**) | Lake Shore Dr & Monroe St → Lake Shore Dr & Monroe St (703 of 770 trips, **91.30% casual**) |
+| Activity | Overall leader | Total trips | Member share | Casual share |
+| --- | --- | ---: | ---: | ---: |
+| Departures | Canal St & Adams St | 14,155 | 97.48% | 2.52% |
+| Returns | Canal St & Adams St | 15,067 | 98.27% | 1.73% |
+| Station pair | Michigan Ave & Washington St → Clinton St & Washington Blvd | 966 | 99.48% | 0.52% |
 
-Each percentage uses all trips for that station activity or station pair across both quarters as its denominator. **Streeter Dr & Grand Ave** is a candidate for a membership promotion because it had the most casual departures and returns. **Lake Shore Dr & Monroe St** is another candidate because it was the start and return station for the most common casual station pair.
+At **Streeter Dr & Grand Ave**, casual riders accounted for **60.64% of 4,533 departures** and **69.98% of 5,416 returns**. They also accounted for **91.30% of 770 trips** that started and ended at **Lake Shore Dr & Monroe St**. These shares help identify locations for testing membership outreach.
 
 ### E. Long casual rides on weekdays and weekends
 
@@ -126,36 +128,29 @@ I defined a long ride as a trip lasting at least 20 minutes. The percentage in t
 
 **Long casual rides were common on both weekdays and weekends.** Around half of weekday casual trips reached 20 minutes in both quarters, and the weekday count rose from **7,404 to 11,028**. Weekends had a higher share in both quarters. In 2019 Q1, weekdays still recorded more long casual trips in total.
 
-**Long casual rides were concentrated in the afternoon.** From noon through 5:59 p.m., **65.45%** of weekday long casual trips started in 2019 Q1 and **61.98%** in 2020 Q1. The busiest weekday departure hour shifted from 3 p.m. to 5 p.m., and 2 p.m. was the busiest weekend hour in both quarters.
+**The busiest hours for long casual rides were in the afternoon.** The busiest weekday departure hour shifted from 3 p.m. to 5 p.m., and 2 p.m. was the busiest weekend hour in both quarters.
 
 I would prioritize casual riders taking longer trips when testing a membership offer based on accumulated ride time. The weekday afternoon volume gives the team a clear window to test that offer, and the recurring weekend peak provides a time to promote a weekend riding challenge. The percentages describe trips. Measuring membership conversion would require tracking the results of the offer.
 
 ## Key Findings for Q1 Membership Outreach
 
-### 1. Long casual rides concentrated on weekday afternoons
+### 1. Long casual rides peaked on weekday afternoons
 
-| Period | Weekday members | Weekday casual riders | Weekend members | Weekend casual riders |
-| --- | ---: | ---: | ---: | ---: |
-| 2019 Q1 | 10.77% | 55.24% | 13.68% | 62.57% |
-| 2020 Q1 | 11.82% | 49.34% | 17.88% | 64.02% |
-
-Each percentage is the share of trips lasting at least 20 minutes among all trips for the same quarter, rider type, and day type. On weekdays, around half of casual trips reached that threshold, compared with about one in ten member trips in both quarters.
-
-The share of weekday casual trips lasting at least 20 minutes fell from **55.24%** in 2019 Q1 to **49.34%** in 2020 Q1. The number of these trips still grew by about **49%**, from **7,404 to 11,028**, as total weekday casual trips increased. Between noon and 5:59 p.m., **65.45%** of longer weekday trips started in 2019 Q1 and **61.98%** in 2020 Q1. That recurring afternoon concentration gives the marketing team a window to test an offer based on accumulated ride time.
+The share of weekday casual trips lasting at least 20 minutes fell from **55.24%** in 2019 Q1 to **49.34%** in 2020 Q1. The number of these trips still grew by about **49%**, from **7,404 to 11,028**, as total weekday casual trips increased. The peak hours of **3 p.m.** and **5 p.m.** give the marketing team two afternoon slots to test an offer based on accumulated ride time.
 
 ### 2. Long weekend rides peaked at 2 p.m.
 
 In both first quarters, weekend casual trips were more likely than weekday casual trips to last at least 20 minutes. The weekend shares were **62.57%** in 2019 Q1 and **64.02%** in 2020 Q1. The busiest hour for those longer weekend rides was **2:00–2:59 p.m.** in both periods, with **878** and **2,308** departures, respectively. That recurring peak gives the marketing team a specific hour to test promoting a member-only weekend riding challenge.
 
-### 3. Two stations led casual departures in both quarters
+### 3. Two stations showed strong casual activity in both quarters
 
-**Streeter Dr & Grand Ave** and **Lake Shore Dr & Monroe St** ranked first or second for casual departures in both quarters. Across both periods, Streeter Dr & Grand Ave recorded **2,749 casual departures** and **3,790 casual returns**, the highest counts for both activities. Lake Shore Dr & Monroe St recorded **2,732 casual departures**, and casual riders accounted for **74.06%** and **70.07%** of all departures there in the two quarters. It was also the departure station for the most common casual station pair in each quarter. Streeter Dr & Grand Ave offers a place to test a message after riders return their bikes, and Lake Shore Dr & Monroe St offers a place to test a message at pickup.
+**Streeter Dr & Grand Ave** had a **69.98% casual share of returns** across the two quarters. At **Lake Shore Dr & Monroe St**, casual riders made **74.06%** and **70.07%** of departures in 2019 Q1 and 2020 Q1, respectively. These shares support testing a message after bike returns at Streeter Dr & Grand Ave and at pickup at Lake Shore Dr & Monroe St.
 
 ## Three Recommendations Based on Q1 Findings
 
 ### 1. Test a first-month membership credit after a long ride
 
-About half of weekday casual trips lasted at least 20 minutes in both quarters, compared with about one in ten member trips. I would start on weekday afternoons and offer casual riders who have just completed a trip of at least 20 minutes a credit toward their first month of membership. The credit would cover part of that trip's fare. I would compare sign-up rates with a group of eligible riders who did not receive the offer.
+About half of weekday casual trips lasted at least 20 minutes in both quarters. I would start on weekday afternoons and offer casual riders who have just completed a trip of at least 20 minutes a credit toward their first month of membership. The credit would cover part of that trip's fare. I would compare sign-up rates with a group of eligible riders who did not receive the offer.
 
 ### 2. Test a weekend membership invitation at 2 p.m.
 
@@ -163,7 +158,7 @@ In both first quarters, weekend casual trips lasting at least 20 minutes most of
 
 ### 3. Compare pickup and return prompts at two busy stations
 
-**Streeter Dr & Grand Ave** and **Lake Shore Dr & Monroe St** were the two busiest casual departure stations in both first quarters. At each station, I would test showing a membership prompt before pickup and after return. Comparing sign-up rates for the two timings at each station would show which timing works better and whether the result differs by location.
+Casual riders accounted for a large share of returns at **Streeter Dr & Grand Ave** and departures at **Lake Shore Dr & Monroe St**. At each station, I would test showing a membership prompt before pickup and after return. Comparing sign-up rates for the two timings at each station would show which timing works better and whether the result differs by location.
 
 I would measure conversion as the share of eligible casual riders who sign up in each test group, using campaign and membership records.
 
